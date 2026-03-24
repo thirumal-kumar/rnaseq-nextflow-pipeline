@@ -24,11 +24,21 @@ FASTQ → QC → Indexing → Quantification → TPM output
 - FastQC
 - Salmon
 
+## Key Features
+- Modular Nextflow pipeline (DSL2)
+- Docker-based reproducibility
+- Multi-container execution (FastQC, Salmon, BWA)
+- Parallel sample processing
+- Resume and caching support
+
+## Example Output
+- QC reports
+- Salmon quantification (quant.sf)
+
+## Use Case
+Transcriptomics analysis for gene expression quantification
+
 ## Run
 ```bash
 nextflow run main.nf -with-docker
 
-
-## Output
-QC reports
-Salmon quantification (quant.sf)
